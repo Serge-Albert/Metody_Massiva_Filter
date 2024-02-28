@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const newNumbers = numbers.filter((element) => {
+            return element % 2 === 0
+        })
+        console.log(newNumbers);
+
+        const words = ['apple', 'banana', 'grape', 'orange', 'pear'];
+        const newWords = words.filter((element) => {
+            return element.split('')[0] === 'a'
+        })
+        console.log(newWords);
+
+        const products = [
+            { name: 'apple', category: 'fruit' },
+            { name: 'carrot', category: 'vegetable' },
+            { name: 'banana', category: 'fruit' },
+        ];
+        let newProducts = products.filter((element) => {
+            return element.category === 'fruit'
+        })
+        console.log(newProducts);
+
+        const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        const newNumbers1 = numbers1.filter((element) => {
+            return element * 3 === 9
+        })
+        console.log(newNumbers1);
+
+        const words1 = ['apple', 'banana', 'grape', 'orange', 'pear'];
+        const containsA = words1.filter((element) => {
+            return element.split('')[0] === 'g'
+
+        });
+        console.log(containsA);
+
+
+        const data = [
+            { name: 'John', age: 30 },
+            { name: 'Jane', age: 25 },
+            { name: 'Bob', age: '35' },
+        ]
+        let newData = data.filter((element) => {
+            return typeof element.age === 'number'
+        })
+        console.log(newData);
+
+        let names = ['Mayer', 'Ott', 'Schoch', 'Müller', 'Martin', 'Kiel', 'Meinzer', 'Schmidt'];
+        names.sort((a, b) => {
+            return b.localeCompare(a)
+        })
+        console.log(names);
+
+
+    </script>
+
+</body>
+
+</html>
